@@ -3,14 +3,11 @@
 
     angular
         .module('myApp.about')
-        .directive('maAbout', maAbout);
-
-    maAbout.$inject = [];
+        .component('maAbout', maAbout());
 
     function maAbout() {
         var directive = {
             controller: AboutController,
-            controllerAs: 'vmAbout',
             templateUrl: 'main/about/about.html',
             restrict: 'E',
             scope: {}

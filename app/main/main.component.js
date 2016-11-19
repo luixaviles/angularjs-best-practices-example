@@ -3,14 +3,11 @@
 
     angular
         .module('myApp')
-        .directive('maMain', maMain);
-
-    maMain.$inject = [];
+        .component('maMain', maMain());
 
     function maMain() {
         var directive = {
             controller: MainController,
-            controllerAs: 'vmMain',
             templateUrl: 'main/main.html',
             restrict: 'E',
             scope: {}

@@ -3,14 +3,11 @@
 
     angular
         .module('myApp.home')
-        .directive('maHome', maHome);
-
-    maHome.$inject = [];
+        .component('maHome', maHome());
 
     function maHome() {
         var directive = {
             controller: HomeController,
-            controllerAs: 'vmHome',
             templateUrl: 'main/home/home.html',
             restrict: 'E',
             scope: {}
