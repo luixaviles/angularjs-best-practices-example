@@ -12,9 +12,7 @@
             .state('about', {
                 url: 'about',
                 parent: 'main',
-                templateUrl: 'main/about/about.html',
-                controller: 'AboutController',
-                controllerAs: 'vmAbout'
+                template: '<ma-about></ma-about>'
             });
     }
 })();

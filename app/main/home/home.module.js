@@ -12,9 +12,7 @@
             .state('home', {
                 url: 'home',
                 parent: 'main',
-                templateUrl: 'main/home/home.html',
-                controller: 'HomeController',
-                controllerAs: 'vmHome'
+                template: '<ma-home></ma-home>'
             });
     }
 })();
