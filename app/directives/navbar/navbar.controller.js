@@ -5,10 +5,12 @@
         .module('navbar')
         .controller('NavbarController', NavbarController);
 
-    NavbarController.$inject = ['$scope'];
+    NavbarController.$inject = [];
 
-    function NavbarController($scope) {
-        $scope.title = 'NavbarController';
+    function NavbarController() {
+        var vm = this;
+
+        vm.title = 'NavbarController';
 
         activate();
 

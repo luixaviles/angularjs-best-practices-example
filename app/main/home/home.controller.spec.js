@@ -2,19 +2,15 @@
 
 describe('Home controller', function () {
 
-    var $scope,
-        controller;
+    var controller;
 
     beforeEach(module('myApp.home'));
 
-    beforeEach(inject(function ($controller, $rootScope) {
-        $scope = $rootScope.$new();
-        controller = $controller('HomeController', {
-            $scope: $scope
-        });
+    beforeEach(inject(function ($controller) {
+        controller = $controller('HomeController');
     }));
 
     it('should define a title', function () {
-        expect($scope.title).toBeDefined();
+        expect(controller.title).toBeDefined();
     });
 });

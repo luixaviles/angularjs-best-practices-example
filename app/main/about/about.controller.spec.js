@@ -17,7 +17,7 @@ describe('myApp.about module', function () {
         }));
 
         it('should define a title', function () {
-            expect($scope.title).toBeDefined();
+            expect(controller.title).toBeDefined();
         });
     });
 });

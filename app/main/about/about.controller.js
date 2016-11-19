@@ -5,10 +5,12 @@
         .module('myApp.about')
         .controller('AboutController', AboutController);
 
-    AboutController.$inject = ['$scope'];
+    AboutController.$inject = [];
 
-    function AboutController($scope) {
-        $scope.title = 'AboutController';
+    function AboutController() {
+        var vm = this;
+
+        vm.title = 'AboutController';
 
         activate();
 

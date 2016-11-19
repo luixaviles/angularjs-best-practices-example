@@ -13,7 +13,8 @@
                 url: 'about',
                 parent: 'main',
                 templateUrl: 'main/about/about.html',
-                controller: 'AboutController'
+                controller: 'AboutController',
+                controllerAs: 'vmAbout'
             });
     }
 })();

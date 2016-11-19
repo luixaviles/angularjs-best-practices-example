@@ -5,10 +5,12 @@
         .module('myApp')
         .controller('MainController', MainController);
 
-    MainController.$inject = ['$scope'];
+    MainController.$inject = [];
 
-    function MainController($scope) {
-        $scope.title = 'MainController';
+    function MainController() {
+        var vm = this;
+
+        vm.title = 'MainController';
 
         activate();
 

@@ -5,10 +5,12 @@
         .module('footer')
         .controller('FooterController', FooterController);
 
-    FooterController.$inject = ['$scope'];
+    FooterController.$inject = [];
 
-    function FooterController($scope) {
-        $scope.title = 'FooterController';
+    function FooterController() {
+        var vm = this;
+
+        vm.title = 'FooterController';
 
         activate();
 

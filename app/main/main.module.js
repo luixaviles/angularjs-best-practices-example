@@ -19,7 +19,8 @@
                 url: '/',
                 redirectTo: 'home',
                 templateUrl: 'main/main.html',
-                controller: 'MainController'
+                controller: 'MainController',
+                controllerAs: 'vmMain'
             });
     }
 })();

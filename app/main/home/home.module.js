@@ -13,7 +13,8 @@
                 url: 'home',
                 parent: 'main',
                 templateUrl: 'main/home/home.html',
-                controller: 'HomeController'
+                controller: 'HomeController',
+                controllerAs: 'vmHome'
             });
     }
 })();

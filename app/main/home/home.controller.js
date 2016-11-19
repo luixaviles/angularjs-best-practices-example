@@ -5,10 +5,12 @@
         .module('myApp.home')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['$scope'];
+    HomeController.$inject = [];
 
-    function HomeController($scope) {
-        $scope.title = 'HomeController';
+    function HomeController() {
+        var vm = this;
+
+        vm.title = 'HomeController';
 
         activate();
 
