@@ -10,15 +10,17 @@
             controller: HomeController,
             templateUrl: 'main/home/home.html',
             restrict: 'E',
-            scope: {}
+            bindings: {
+                name: '='
+            }
         };
 
         return directive;
     }
 
-    HomeController.$inject = [];
+    HomeController.$inject = ['$timeout'];
 
-    function HomeController() {
+    function HomeController($timeout) {
         var vm = this;
 
         vm.title = 'HomeController';
@@ -26,7 +28,9 @@
         activate();
 
         function activate() {
-
+            $timeout(function(){
+                vm.name = 'Jose';
+            }, 2000);
         }
     }
 })();

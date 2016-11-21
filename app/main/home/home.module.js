@@ -12,7 +12,7 @@
             .state('home', {
                 url: 'home',
                 parent: 'main',
-                template: '<ma-home></ma-home>'
+                template: '<ma-home name="\'Luis\'"></ma-home>'
             });
     }
 })();
